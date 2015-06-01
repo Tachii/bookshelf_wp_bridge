@@ -39,8 +39,9 @@ function bookshelf_get_products(){
 			$output .= '<div class="bookshelf_product">';
 			$output .= '<h3>'.$product->title.'</h3>';
 			$output .=  "<img src='$store_url$img_folder$product->image' alt='$product->title' >";
-			$output .= "<div class='price'>$product->price</div>";
+			$output .= "<div class='price'>$product->price $</div>";
 			$output .= "<div class='desc'>".wp_trim_words($product->description, 10)."</div>"; 
+			$output .= "<a href='$store_url/products/details/$product->id'";
 			$output .= "</div>";
 		}
 	} else {
