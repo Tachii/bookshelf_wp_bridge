@@ -46,10 +46,10 @@ function bookshelf_get_products(){
 	} else {
 		//$output .= 'No products to list';
 		//$output .= var_dump($db);
-		$output .= get_option('db_user');
-		$output .= get_option('db_pass');
-		$output .= get_option('db_name');
-		$output .= get_option('db_host');
+		$output .= "db_user: ".get_option('db_user')."<br/>";
+		$output .= "db_pass: ".get_option('db_pass')."<br/>";
+		$output .= "db_name: ".get_option('db_name')."<br/>";
+		$output .= "db_host: ".get_option('db_host')."<br/>";
 	}
 	
 	
