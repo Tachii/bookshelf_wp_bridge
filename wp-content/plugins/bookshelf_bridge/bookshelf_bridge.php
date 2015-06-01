@@ -44,12 +44,7 @@ function bookshelf_get_products(){
 			$output .= "</div>";
 		}
 	} else {
-		//$output .= 'No products to list';
-		//$output .= var_dump($db);
-		$output .= "db_user: ".get_option('db_user')."<br/>";
-		$output .= "db_password: ".get_option('db_password')."<br/>";
-		$output .= "db_name: ".get_option('db_name')."<br/>";
-		$output .= "db_host: ".get_option('db_host')."<br/>";
+		$output .= 'No products to list';
 	}
 	
 	
