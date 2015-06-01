@@ -22,7 +22,7 @@ add_action('admin_menu','bookshelf_admin_actions');
 //Get and Display Products
 function bookshelf_get_products(){
 	//Connect to BookShelf database using WP api
-	$db = new wpdb(get_option('db_user'), get_option('db_pass'), get_option('db_name'), get_option('db_host'));
+	$db = new wpdb(get_option('db_user'), get_option('db_password'), get_option('db_name'), get_option('db_host'));
 	
 	//Get Values
 	$store_url 		= get_option('store_url');
@@ -47,7 +47,7 @@ function bookshelf_get_products(){
 		//$output .= 'No products to list';
 		//$output .= var_dump($db);
 		$output .= "db_user: ".get_option('db_user')."<br/>";
-		$output .= "db_pass: ".get_option('db_pass')."<br/>";
+		$output .= "db_password: ".get_option('db_password')."<br/>";
 		$output .= "db_name: ".get_option('db_name')."<br/>";
 		$output .= "db_host: ".get_option('db_host')."<br/>";
 	}
