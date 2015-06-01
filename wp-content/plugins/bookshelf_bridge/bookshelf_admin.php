@@ -1,6 +1,6 @@
 <style>
 	.bookshelf_admin{
-		width: 250px;
+		width: 240px;
 		display: inline-block;
 	}
 </style>
@@ -27,7 +27,7 @@
 		
 		<?php echo "<h4>".__('Store Settings','bookshelf_trdom')."</h4>"; ?>
 		<p>
-			<label><?php echo _e("Store URL"); ?></label>
+			<label><?php echo _e("Store URL:"); ?></label>
 			<input type="text" name="store_url" value="<?php echo $store_url; ?>" size="20">
 		</p>
 		<p>
