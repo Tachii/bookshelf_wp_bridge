@@ -18,5 +18,23 @@
 			<label><?php echo _e("Database Password"); ?></label>
 			<input type="text" name="db_password" value="<?php echo $db_password; ?>" size="20">
 		</p>
+		
+		<?php echo "<h4>".__('Store Settings','bookshelf_trdom')."</h4>"; ?>
+		<p>
+			<label><?php echo _e("Store URL"); ?></label>
+			<input type="text" name="store_url" value="<?php echo $store_url; ?>" size="20">
+		</p>
+		<p>
+			<label><?php echo _e("Product Image Folder Path:"); ?></label>
+			<input type="text" name="img_folder" value="<?php echo $img_folder; ?>" size="20">
+		</p>
+		<p>
+			<label><?php echo _e("Number of Products:"); ?></label>
+			<input type="text" name="num_products" value="<?php echo $num_products; ?>" size="20">
+		</p>
+		<input type="hidden" name="bookshelf_hidden" value="1">
+		<p>
+			<input type="button" name="submit" value="<?php echo _e('Save','bookshelf_trdom'); ?>" />
+		</p>
 	</form>
 </div>
