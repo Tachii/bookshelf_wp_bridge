@@ -81,7 +81,7 @@
 		</p>
 		<p>
 			<input type="hidden" name="bookshelf_hidden" value="1">
-			<input type="button" name="submit" value="<?php echo _e('Save','bookshelf_trdom'); ?>" />
+			<input type="submit" name="submit" value="<?php echo _e('Save','bookshelf_trdom'); ?>" />
 		</p>
 	</form>
 </div>
