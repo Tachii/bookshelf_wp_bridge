@@ -24,7 +24,23 @@ function bookshelf_get_products(){
 	//Connect to BookShelf database using WP api
 	$db = new wpdb(get_option('db_user'), get_option('db_pass'), get_option('db_name'), get_option('db_host'));
 	
-	$store_url = get_option('store_url');
-	$img_folder = get_option('img_folder');
-	$num_products = get_option('num_products');
+	//Get Values
+	$store_url 		= get_option('store_url');
+	$img_folder 	= get_option('img_folder');
+	$num_products 	= get_option('num_products');
+	
+	//Getting Products
+	$products = $db->get_results("SELECT * FROM shop_products LIMIT".$num_products);
+	
+	//Build Output
+	$output = '';
+	if($products){
+		foreach ($products as $product) {
+			$output .= '<div class="bookshelf_product">';
+			$output .= '<h3>'.$product->title.'</h3>';
+			$output .=  "<img src='$store_url.$img_folder/$product->image' >";
+		}
+	} else {
+		$output .= 'No products to list';
+	}
 }
