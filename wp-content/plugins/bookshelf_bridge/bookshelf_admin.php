@@ -43,9 +43,8 @@
 
 ?>
 
-
+<?php echo "<h2>".__('Bookshelf Product Display Options','bookshelf_trdom')."</h2>";?>
 <div class="wrap bookshelf_admin">
-	<?php echo "<h2>".__('Bookshelf Product Display Options','bookshelf_trdom')."</h2>";?>
 	<form name="bookshelf_from" method="post" action="<?php echo str_replace( '%7E', '~', $_SERVER['REQUEST_URI']); ?>">
 		<?php echo "<h4>".__('Database Settings','bookshelf_trdom')."</h4>"; ?>
 		<p>
@@ -64,6 +63,8 @@
 			<label><?php echo _e("Database Password:"); ?></label>
 			<input type="text" name="db_password" value="<?php echo $db_password; ?>" size="20">
 		</p>
+		
+		<br /><br />
 		
 		<?php echo "<h4>".__('Store Settings','bookshelf_trdom')."</h4>"; ?>
 		<p>
