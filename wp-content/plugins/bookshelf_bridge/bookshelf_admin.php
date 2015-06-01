@@ -6,5 +6,17 @@
 			<label><?php echo _e("Database Host"); ?></label>
 			<input type="text" name="db_host" value="<?php echo $db_host; ?>" size="20">
 		</p>
+		<p>
+			<label><?php echo _e("Database Name"); ?></label>
+			<input type="text" name="db_name" value="<?php echo $db_host; ?>" size="20">
+		</p>
+		<p>
+			<label><?php echo _e("Database User"); ?></label>
+			<input type="text" name="db_user" value="<?php echo $db_host; ?>" size="20">
+		</p>
+		<p>
+			<label><?php echo _e("Database Password"); ?></label>
+			<input type="text" name="db_password" value="<?php echo $db_host; ?>" size="20">
+		</p>
 	</form>
 </div>
