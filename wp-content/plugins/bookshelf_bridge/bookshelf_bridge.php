@@ -38,7 +38,7 @@ function bookshelf_get_products(){
 		foreach ($products as $product) {
 			$output .= '<div class="bookshelf_product">';
 			$output .= '<h3>'.$product->title.'</h3>';
-			$output .=  "<img src='$store_url.$img_folder/$product->image' alt='$product->title' >";
+			$output .=  "<img src='$store_url$img_folder$product->image' alt='$product->title' >";
 			$output .= "<div class='price'>$product->price</div>";
 			$output .= "<div class='desc'>$product->description</div>"; 
 			$output .= "</div>";
