@@ -1,6 +1,10 @@
 <div class="wrap bookshelf_admin">
 	<?php echo "<h2>".__('Bookshelf Product Display Options','bookshelf_trdom')."</h2>";?>
-	<form name="bookshelf_from" method="post" action="">
-		
+	<form name="bookshelf_from" method="post" action="<?php echo str_replace( '%7E', '~', $_SERVER['REQUEST_URI']); ?>">
+		<?php echo "<h4>".__('Database Settings','bookshelf_trdom')."</h4>"; ?>
+		<p>
+			<label><?php echo _e("Database Host"); ?></label>
+			<input type="text" name="db_host" value="<?php echo $db_host; ?>" size="20">
+		</p>
 	</form>
 </div>
