@@ -1,6 +1,6 @@
 <style>
 	.bookshelf_admin{
-		width: 240px;
+		width: 200px;
 		display: inline-block;
 	}
 </style>
@@ -38,8 +38,8 @@
 			<label><?php echo _e("Number of Products:"); ?></label>
 			<input type="text" name="num_products" value="<?php echo $num_products; ?>" size="20">
 		</p>
-		<input type="hidden" name="bookshelf_hidden" value="1">
 		<p>
+			<input type="hidden" name="bookshelf_hidden" value="1">
 			<input type="button" name="submit" value="<?php echo _e('Save','bookshelf_trdom'); ?>" />
 		</p>
 	</form>
