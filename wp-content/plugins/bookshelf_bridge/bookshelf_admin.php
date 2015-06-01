@@ -7,7 +7,7 @@
 
 <!-- Form Processing --> 
 <?php 
-	if($_POST['tgp_hidden'] == 1){
+	if($_POST['bookshelf_hidden'] == 1){
 		//Form was submited
 		$db_host = $_POST['db_host'];
 		update_option('db_host',$db_host);
