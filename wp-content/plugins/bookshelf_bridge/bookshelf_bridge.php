@@ -45,7 +45,9 @@ function bookshelf_get_products(){
 		}
 	} else {
 		$output .= 'No products to list';
+		$output .= var_dump($expression);
 	}
+	
 	
 	return $output;
 }
