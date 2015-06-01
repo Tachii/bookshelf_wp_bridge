@@ -12,4 +12,8 @@ function bookshelf_admin_actions(){
 	
 }
 
+function bookshelf_admin(){
+	echo 'Test';
+}
+
 add_action('admin_menu','bookshelf_admin_actions');
