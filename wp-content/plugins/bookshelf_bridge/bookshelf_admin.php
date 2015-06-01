@@ -8,15 +8,15 @@
 		</p>
 		<p>
 			<label><?php echo _e("Database Name"); ?></label>
-			<input type="text" name="db_name" value="<?php echo $db_host; ?>" size="20">
+			<input type="text" name="db_name" value="<?php echo $db_name; ?>" size="20">
 		</p>
 		<p>
 			<label><?php echo _e("Database User"); ?></label>
-			<input type="text" name="db_user" value="<?php echo $db_host; ?>" size="20">
+			<input type="text" name="db_user" value="<?php echo $db_user; ?>" size="20">
 		</p>
 		<p>
 			<label><?php echo _e("Database Password"); ?></label>
-			<input type="text" name="db_password" value="<?php echo $db_host; ?>" size="20">
+			<input type="text" name="db_password" value="<?php echo $db_password; ?>" size="20">
 		</p>
 	</form>
 </div>
