@@ -46,4 +46,9 @@ function bookshelf_get_products(){
 	} else {
 		$output .= 'No products to list';
 	}
+	
+	return $output;
 }
+
+//Add Shortcode
+add_shortcode('show_products', 'bookshelf_get_products');
