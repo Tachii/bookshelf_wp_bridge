@@ -12,22 +12,22 @@
 		$db_host = $_POST['db_host'];
 		update_option('db_host',$db_host);
 		
-		$db_host = $_POST['db_host'];
+		$db_name = $_POST['db_name'];
 		update_option('db_name',$db_name);
 		
-		$db_host = $_POST['db_host'];
+		$db_user = $_POST['db_user'];
 		update_option('db_user',$db_user);
 		
-		$db_host = $_POST['db_host'];
+		$db_password = $_POST['db_password'];
 		update_option('db_password',$db_password);
 		
-		$db_host = $_POST['db_host'];
+		$store_url = $_POST['store_url'];
 		update_option('store_url',$store_url);
 		
-		$db_host = $_POST['db_host'];
+		$img_folder = $_POST['img_folder'];
 		update_option('img_folder',$img_folder);
 		
-		$db_host = $_POST['db_host'];
+		$num_products = $_POST['num_products'];
 		update_option('num_products',$num_products);
 		
 	} else {
