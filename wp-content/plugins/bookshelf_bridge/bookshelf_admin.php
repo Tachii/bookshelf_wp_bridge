@@ -1,3 +1,9 @@
+<style>
+	.bookshelf_admin{
+		width: 250px;
+		display: inline-block;
+	}
+</style>
 <div class="wrap bookshelf_admin">
 	<?php echo "<h2>".__('Bookshelf Product Display Options','bookshelf_trdom')."</h2>";?>
 	<form name="bookshelf_from" method="post" action="<?php echo str_replace( '%7E', '~', $_SERVER['REQUEST_URI']); ?>">
