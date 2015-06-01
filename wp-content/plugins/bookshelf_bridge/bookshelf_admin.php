@@ -4,24 +4,64 @@
 		display: inline-block;
 	}
 </style>
+
+<!-- Form Processing --> 
+<?php 
+	if($_POST['tgp_hidden'] == 1){
+		//Form was submited
+		$db_host = $_POST['db_host'];
+		update_option('db_host',$db_host);
+		
+		$db_host = $_POST['db_host'];
+		update_option('db_name',$db_name);
+		
+		$db_host = $_POST['db_host'];
+		update_option('db_user',$db_user);
+		
+		$db_host = $_POST['db_host'];
+		update_option('db_password',$db_password);
+		
+		$db_host = $_POST['db_host'];
+		update_option('store_url',$store_url);
+		
+		$db_host = $_POST['db_host'];
+		update_option('img_folder',$img_folder);
+		
+		$db_host = $_POST['db_host'];
+		update_option('num_products',$num_products);
+		
+	} else {
+		//Form Was Not Submited - Get Option Values
+		$db_host = get_option('db_host');
+		$db_name = get_option('db_name');
+		$db_user = get_option('db_user');
+		$db_password = get_option('db_password');
+		$store_url = get_option('store_url');
+		$img_folder = get_option('img_folder');
+		$num_products = get_option('num_products');
+	}
+
+?>
+
+
 <div class="wrap bookshelf_admin">
 	<?php echo "<h2>".__('Bookshelf Product Display Options','bookshelf_trdom')."</h2>";?>
 	<form name="bookshelf_from" method="post" action="<?php echo str_replace( '%7E', '~', $_SERVER['REQUEST_URI']); ?>">
 		<?php echo "<h4>".__('Database Settings','bookshelf_trdom')."</h4>"; ?>
 		<p>
-			<label><?php echo _e("Database Host"); ?></label>
+			<label><?php echo _e("Database Host:"); ?></label>
 			<input type="text" name="db_host" value="<?php echo $db_host; ?>" size="20">
 		</p>
 		<p>
-			<label><?php echo _e("Database Name"); ?></label>
+			<label><?php echo _e("Database Name:"); ?></label>
 			<input type="text" name="db_name" value="<?php echo $db_name; ?>" size="20">
 		</p>
 		<p>
-			<label><?php echo _e("Database User"); ?></label>
+			<label><?php echo _e("Database User:"); ?></label>
 			<input type="text" name="db_user" value="<?php echo $db_user; ?>" size="20">
 		</p>
 		<p>
-			<label><?php echo _e("Database Password"); ?></label>
+			<label><?php echo _e("Database Password:"); ?></label>
 			<input type="text" name="db_password" value="<?php echo $db_password; ?>" size="20">
 		</p>
 		
