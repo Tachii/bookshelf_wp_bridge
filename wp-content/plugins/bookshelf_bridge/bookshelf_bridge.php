@@ -41,7 +41,7 @@ function bookshelf_get_products(){
 			$output .=  "<img src='$store_url$img_folder$product->image' alt='$product->title' >";
 			$output .= "<div class='price'>$product->price $</div>";
 			$output .= "<div class='desc'>".wp_trim_words($product->description, 10)."</div>"; 
-			$output .= "<a href='{$store_url}products/details/$product->id'";
+			$output .= "<a href='{$store_url}products/details/$product->id'>Buy Now</a>";
 			$output .= "</div>";
 		}
 	} else {
